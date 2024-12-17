@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nexus</title>
+    <link rel="stylesheet" href="main-hero.css" type="text/css" />
+    <style>
+        .contenido {
+            display: flex; /* Alineación en línea horizontal */
+            align-items: center; /* Centra verticalmente */
+            justify-content: center; /* Alinea a la izquierda */
+            gap: 30px;
+            flex-direction: row-reverse;
+        }
+
+/* Mover la imagen hacia arriba */
+        .contenido img {
+        width: 280px; /* Ajusta el tamaño de la imagen */
+        height: 285px; /* Ajusta la altura de la imagen */
+        margin-top: -70px; /* Mueve la imagen hacia arriba */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../img/logo nexus.jpg" width="235" height="235" />
+    <div class="ajuste-botones">
+        <a href="../Registro.html">
+        <button type="submit" class="button">Registro</button>
+        </a>
+        <a href="../Login.html">
+        <button type="submit" class="button">Iniciar sesión</button>
+        </a>
+    </div>
+    <div class="menu">
+        <button class="redes">Contáctanos<button>
+        <div class="menu-contenido">
+                <img src="../img/logo gmail.png" alt="gmail" />
+                <span>camrole2004@gmail.com</span>
+            <a href="https://x.com/Nexus7356471" target="_blank">
+                <img src="../img/logo x.jpg" alt="Twitter" />
+            </a>
+            <a href="https://www.facebook.com/people/Diario-Deportivo-Nexus/61570842927356/" target="_blank">
+                <img src="../img/logo facebook.jpg" alt="Facebook"/>
+            </a>
+        </div>
+    </div> 
+    <input type="search" name="q" placeholder="Buscar..." />
+        <h1></h1>
+        <div class="contenido">
+            <img src="../img/deportes.jpg" width="280" height="280" />
+            <div>
+                <p>
+                    Conectate con lo mejor del mundo deportivo, <br>
+                    accede a las últimas noticias deportivas y<br>
+                    mantente al dia con las actualizaciones más <br>
+                    relevantes sobre tus deportes y equipos <br>
+                    favoritos.
+                </p>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.redes').addEventListener('click', function() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active'); // Sirve para mostrar/ocultar el menú
+            });
+        </script>
+        <div class="categorias">
+            <div class="imagen-item">
+                <a href="../futbol.html">
+                <img src="../img/UEFA-Champions-League-Logo 1.jpg">
+                </a>
+                <p>Fútbol</p>
+            </div>
+    
+            <div class="imagen-item">
+                <a href="../baloncesto.html">
+                <img src="../img/NBA-new-logo 1.jpg">
+                </a>
+                <p>Baloncesto</p>
+            </div>
+    
+            <div class="imagen-item">
+                <a href="../futbol-americano.html">
+                <img src="../img/NFL-logo 1.jpg">
+                </a>
+                <p>Futbol americano</p>
+            </div>
+
+            <div class="imagen-item">
+                <a href="../voleibol.html">
+                <img src="../img/Volleyball_Nations_League_Logo 1.jpg">
+                </a>
+                <p>Voleibol</p>
+            </div>
+            <div class="imagen-item">
+                <a href="../balonmano.html">
+                <img src="../img/asobal 1.jpg">
+                </a>
+                <p>Balonmano</p>
+            </div>
+        </div>
+        <div class="noticias">
+            <div class="imagen-noticias">
+                <a href="../noti-f1.html">
+                <img src="../img-noti/noti1.jpg">
+                </a>
+                <p>
+                    Así queda la tabla de posiciones <br>
+                    de la UEFA Champions League, tras <br>
+                    la victoria del Liverpool sobre el<br> 
+                    Real Madrid
+                </p>
+            </div>
+    
+            <div class="imagen-noticias">
+                <a href="../noti-b1.html">
+                <img src="../img-noti/noti2.jpg">
+                </a>
+                <p>
+                    Cavaliers, en lo más alto de la NBA,<br>
+                    Ja Morant dominó a Celtics y Nuggets <br>
+                    cayó con 56 puntos de Jokic
+                    
+                </p>
+            </div>
+    
+            <div class="imagen-noticias">
+                <a href="../noti-fa1.html">
+                <img src="../img-noti/noti3.jpg">
+                </a>
+                <p>
+                    Mike Holmgren y Sterling Sharpe, <br>
+                    finalistas al Salón de la Fama
+                </p>
+            </div>
+
+            <div class="imagen-noticias">
+                <a href="../noti-v3.html">
+                <img src="../img-noti/noti4.jpg">
+                </a>
+                <p>
+                    Voleibol: El Entrenador Magoo de <br>
+                    Praia Clube Ve el Campeonato del <br>
+                    Mundo como una 'Oportunidad'
+                </p>
+            </div>
+            <div class="imagen-noticias">
+                <a href="../noti-ba4.html">
+                <img src="../img-noti/noti5.jpg">
+                </a>
+                <p>
+                    El Barça, con los deberes hechos<br>
+                    en Europa, visita a un Logroño<br>
+                    en dinámica negativa
+                </p>
+            </div>
+        </div>
+</body>
+
+</html>

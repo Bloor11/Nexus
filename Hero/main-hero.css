@@ -1,0 +1,201 @@
+body{
+    background-color: #221b21;
+    font-family: Tahoma;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.ajuste-botones {
+    position: fixed; /* Para mantener los botones siempre visibles */
+    top: 10px; /* Distancia del borde superior */
+    right: 10px; /* Distancia del borde derecho */
+    display: flex; /* Para alinear los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    z-index: 1000; /* Asegura que estén encima de otros elementos */
+}
+
+/* Estilo de los botones */
+.button {
+    padding: 10px 20px;
+    background-color: #78104d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #221b21;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Courier New';
+    font-size: 32px; 
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.5;  
+}
+
+
+/* Estilo para el texto */
+.contenido div {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el texto dentro del div */
+    font-size: 25px; /* Aumenta el tamaño de la letra */
+    margin-top: -120px; /* Mueve el texto hacia arriba */
+}
+
+/*Categorias principales*/
+.categorias {
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si hay poco espacio */
+    margin-top: 50px;
+}
+
+/* Estilo para cada imagen y su texto */
+.imagen-item {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    width: 180px; /* Ancho fijo para las imágenes */
+}
+
+.imagen-item img {
+    width: 140px; /* Hace que las imágenes ocupen todo el ancho de su contenedor */
+    height: 120px; /* Mantiene la proporción de la imagen */
+}
+
+.imagen-item p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+
+/*Noticias destacadas*/
+.noticias {
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 40px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si hay poco espacio */
+    margin-top: 50px;
+}
+
+/* Estilo para cada imagen y su texto */
+.imagen-noticias {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    width: 180px; /* Ancho fijo para las imágenes */
+}
+
+.imagen-noticias img {
+    width: 180px; /* Hace que las imágenes ocupen todo el ancho de su contenedor */
+    height: 130px; /* Mantiene la proporción de la imagen */
+}
+
+.imagen-noticias p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 15px; /* Añade espacio entre la imagen y el texto */
+}
+
+input[type="search"] {
+    width: 300px; /* Ancho del campo */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: 2px solid #78104d; /* Color y grosor del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f5f5f5; /* Color de fondo */
+    color: #333; /* Color del texto */
+    position: absolute; 
+    top: 10px; 
+    left: 600px;
+    outline: none; /* Quita el contorno azul predeterminado */
+}
+
+input[type="search"]::placeholder {
+    color: #aaa; /* Color del texto del placeholder */
+}
+
+input[type="search"]:focus {
+    border-color: #78104d; /* Cambia el borde al hacer foco */
+    background-color: #fff; /* Fondo blanco al hacer foco */
+}
+
+.menu {
+    position: absolute; /* Permite mover el contenedor de manera libre */
+    top: -201px; /* Distancia desde la parte superior de la página */
+    left: 700px; /* Distancia desde el borde izquierdo de la página */
+}
+
+.redes {
+    background-color: #78104d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.redes:hover {
+    background-color: #221b21;
+}
+
+/* Estilo para las imágenes dentro del menú desplegable */
+.menu-contenido img {
+    width: 40px;  /* Establece el ancho de la imagen */
+    height: 40px; /* Establece la altura de la imagen */
+    margin-right: 10px; /* Espacio entre las imágenes */
+    margin-bottom: 5px; /* Espacio debajo de cada imagen */
+    transition: transform 0.3s ease; /* Efecto de transición cuando se pasa el cursor sobre la imagen */
+}
+
+.menu-contenido img:hover {
+    transform: scale(1.2); /* Hace que la imagen crezca un poco al pasar el ratón */
+
+
+}
+/* Estilo para el contenedor del menú desplegable */
+.menu {
+    position: relative; /* Posiciona el contenido desplegable relativo al botón */
+    display: inline-block; /* El contenedor se comporte como un elemento en línea */
+}
+
+/* Estilo para el contenido desplegable */
+.menu-contenido {
+    display: none; /* El contenido está oculto por defecto */
+    position: absolute;
+    top: 100%; /* Lo coloca justo debajo del botón */
+    left: 0; /* Alinea el menú a la izquierda del botón */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0; /* Espaciado interno */
+}
+
+/* Estilo para los enlaces del menú */
+.menu-contenido a {
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-contenido a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú cuando el contenedor .dropdown tiene la clase 'active' */
+.menu.active .menu-contenido {
+    display: block;
+}
