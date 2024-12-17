@@ -1,0 +1,125 @@
+body {
+    background-color: #221b21;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 540px;
+    background-color: #ffffff;
+    padding: 140px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 250px;
+}
+
+h1 {
+    position:absolute;
+    top: 260px;
+    left: 300px;
+    color: #222;
+    font-size: 18px;
+}
+
+/* Botón de Google */
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(248, 247, 247, 0.1);
+    transition: all 0.3s ease;
+}
+
+.google-login:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.google-logo {
+    position: absolute;
+    width: 24px;
+    height: auto;
+    top: 160px;
+    left: 280px
+}
+
+.nexus-logo {
+    position: absolute;
+    width: 45px;
+    height: auto;
+    top: 210px;
+    left: 300px
+}
+
+/* Divider */
+.Iniciar {
+    position: absolute;
+    top: 155px;
+    left: 320px;
+    font-size: 14px;
+    color: #999;
+}
+
+.politicas {
+    position: absolute;
+    top: 290px;
+    left: 680px;
+    font-size: 12px;
+    color: #222;
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* Campos del formulario */
+.login-form input {
+    position:absolute;
+    top: 250px;
+    left: 680px;
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Botón de iniciar sesión */
+.login-button {
+    position:absolute;
+    top: 380px;
+    left: 900px;
+    width: 10%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+

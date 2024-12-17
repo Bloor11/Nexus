@@ -1,0 +1,52 @@
+body {
+    background-color: #221b21;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 190px;
+    height: 190px;
+}
+
+.texto {
+    position: absolute;
+    top: 160px;
+    left: 470px; /*mover texto a la derecha*/
+    transform: translateX(-50%);
+    color: white; /* Color del texto sobre la imagen */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.imagen {
+    position: absolute;
+    top: 200px;
+    left: 900px;
+    width: 300px;
+    height: auto;
+}
+
+.imagen2 {
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    width: 300px;
+    height: auto;
+}
+
+.contenido{
+    position: absolute;
+    top: 250px;
+    left: 480px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+}

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #221b21;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente el contenido principal */
+    justify-content: center; /* Centra todo verticalmente */
+    height: 100vh; /* Asegura que el body ocupe todo el alto de la ventana */
+}
+
+/* Estilo para el encabezado */
+header {
+    position: absolute;
+    top: 30px; /* Coloca el texto 'Registro' cerca de la parte superior */
+    left: 50px; /* Coloca el texto 'Registro' cerca de la parte izquierda */
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Contenedor principal para el formulario */
+.formulario {
+    margin-top: 200px; /* Separa el formulario del encabezado */
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #221b21;
+    border-radius: 10px;
+}
+
+.formulario h3 {
+    color: #fff; /* Color blanco para asegurar visibilidad */
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Imagen dentro del formulario */
+.formulario img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    display: block; /* Centra la imagen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el formulario */
+.login-form {
+    width: 100%;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos */
+}
+
+
+
+.login-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+    width: 100%; /* Asegura que las etiquetas no se desborden */
+    text-align: center;
+}
+
+.login-form input {
+    width: 350%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #221b21;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #78104d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botones {
+    display: flex; /* Alinea los botones en fila */
+    justify-content: space-between; /* Controla el espaciado */
+    gap: 30px; /* Espacio entre los botones */
+}
+.login-form button:hover {
+    background-color: #221b21;
+}
+

@@ -1,0 +1,71 @@
+body {
+    background-color: #221b21;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 210px;
+    height: 210px;
+}
+
+.titulo-centrado {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 90px; /* Espaciado superior opcional */
+    margin-bottom: 20px; /* Espaciado inferior opcional */
+    color: white; /* Color del texto para que contraste con el fondo */
+    font-size: 16px; /* Tamaño de fuente ajustable */
+    font-weight: bold; /* Hace que el título sea más prominente */
+}
+/* Estilo para los botones */
+.ajuste-botones {
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    gap: 10px;
+    position: absolute; /* Permite posicionar el contenedor */
+    top: 30px; /* Ajusta la distancia desde la parte superior */
+    right: 50px; /* Ajusta la distancia desde la parte derecha */
+}
+
+
+.button {
+    background-color: #78104d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #221b21;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Espacio entre cada imagen */
+    margin-top: 110px; /* Ajusta para mover las imágenes más abajo */
+}
+
+.image-column img {
+    position: static; /* Resetea el position para imágenes normales */
+    width: 500px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcional */
+}
+
+.image-column p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
